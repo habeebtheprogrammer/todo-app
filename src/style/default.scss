@@ -1,0 +1,13 @@
+
+&{
+    box-sizing: border-box;
+    font-family: 'regular-font';
+    color: #333333;
+    .x-container{
+        width: 50%;
+        margin: auto;
+        @include mobile() {
+            width: 90%;
+        }
+    }
+}

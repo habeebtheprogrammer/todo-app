@@ -1,0 +1,31 @@
+.x-checklists{
+    [type="checkbox"].filled-in:checked+span:not(.lever):after{
+        background-color: $red-color !important;
+        border: #EB5757;
+    }
+    
+    .x-item{
+        a{
+            color: unset;
+        }
+        @include desktop{
+
+            a{
+                display: none;
+            }
+            &:hover{
+                
+            a{
+                display: block;
+            }
+            }
+        }
+        @include mobile{
+            a{
+                display: block;
+            }
+        }
+
+    }
+   
+}

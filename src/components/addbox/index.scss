@@ -1,0 +1,27 @@
+.x-addbox{
+    color: $red-color;
+
+    ::placeholder {
+        color: $red-color !important;
+        opacity: 1; /* Firefox */
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color: $red-color !important;
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+       color: $red-color !important;
+      }
+      input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea{
+          border-bottom-color: $red-color;
+          box-shadow: 0 1px 0 0 $red-color;
+          color: $red-color;
+      }
+      .input-field .prefix.active{
+          color: $red-color;
+      }
+      .input-field .prefix{
+          z-index: -1 !important;
+      }
+}

@@ -1,0 +1,14 @@
+
+body{
+@import './default.scss';
+
+    &.lightmode{
+        $red-color: #EB5757;
+        $white-color: #FFF;
+        //component
+        @import '../components/navbar/index.scss';
+        @import '../components/addbox/index.scss';
+        @import '../components/checklists/index.scss';
+        
+    }
+}
